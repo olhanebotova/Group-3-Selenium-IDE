@@ -1,0 +1,369 @@
+{
+  "id": "7f7b2a36-15b4-4508-a387-ac618f8e3f03",
+  "version": "2.0",
+  "name": "Group Project",
+  "url": "https://qauto2.forstudy.space/",
+  "tests": [{
+    "id": "7951f6dd-cf21-41fa-949b-2555eba93d30",
+    "name": "1 - Garage Login",
+    "commands": [{
+      "id": "d736c3d0-50e1-40d2-895b-882252a6e676",
+      "comment": "",
+      "command": "open",
+      "target": "https://qauto2.forstudy.space/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bba881ce-4ba7-4928-ba9a-420ebcb7e9c0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1465x799",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59c9748d-74ec-4ce6-a3b1-19446ba8fb1b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-outline-white",
+      "targets": [
+        ["css=.btn-outline-white", "css:finder"],
+        ["xpath=//div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d6ea89b-53aa-4e2b-856d-d023a49a4924",
+      "comment": "",
+      "command": "type",
+      "target": "id=signinEmail",
+      "targets": [
+        ["id=signinEmail", "id"],
+        ["name=email", "name"],
+        ["css=#signinEmail", "css:finder"],
+        ["xpath=//input[@id='signinEmail']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "olhasamchuk7@gmail.com"
+    }, {
+      "id": "d1de944e-91c6-405c-a2a2-08dac8d1522b",
+      "comment": "",
+      "command": "type",
+      "target": "id=signinPassword",
+      "targets": [
+        ["id=signinPassword", "id"],
+        ["name=password", "name"],
+        ["css=#signinPassword", "css:finder"],
+        ["xpath=//input[@id='signinPassword']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "00X4Ka*7w1x8"
+    }, {
+      "id": "19ce9485-ae3a-4807-9d7e-8a4f0d1f3ec3",
+      "comment": "",
+      "command": "click",
+      "target": "id=remember",
+      "targets": [
+        ["id=remember", "id"],
+        ["name=remember", "name"],
+        ["css=#remember", "css:finder"],
+        ["xpath=//input[@id='remember']", "xpath:attributes"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d1a7737-315b-4e99-89c4-19f6816b18ad",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary:nth-child(2)",
+      "targets": [
+        ["css=.btn-primary:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a21fe421-d37a-4a3f-b13d-ccee674e4cd0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.panel-layout",
+      "targets": [
+        ["css=.panel-layout", "css:finder"],
+        ["xpath=//app-panel-layout/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0338a255-6cad-4227-a0b0-aabd4d8a7b88",
+      "comment": "",
+      "command": "assertText",
+      "target": "//h1[contains(text(),'Garage')]",
+      "targets": [],
+      "value": "Garage"
+    }, {
+      "id": "8f8c445f-c748-4bba-a6b5-5b3780f9a9ad",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "37624d27-139b-4383-bab1-64ec621e5dfa",
+    "name": "2 - Add Car",
+    "commands": [{
+      "id": "38d0d7a7-644d-4bc0-9f25-46ce7c712147",
+      "comment": "",
+      "command": "open",
+      "target": "https://qauto2.forstudy.space/panel/garage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e78e58a2-fd5e-4d8c-9f98-6311185ecb4e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1465x799",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80e7bd1e-72e4-46f0-88f5-129cfdce5330",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add car')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2147ca24-388f-44b0-abb4-49e44793bbca",
+      "comment": "",
+      "command": "click",
+      "target": "id=addCarMileage",
+      "targets": [
+        ["id=addCarMileage", "id"],
+        ["name=mileage", "name"],
+        ["css=#addCarMileage", "css:finder"],
+        ["xpath=//input[@id='addCarMileage']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a67bf692-b12e-4c36-9159-a45ae007b3f7",
+      "comment": "",
+      "command": "type",
+      "target": "id=addCarMileage",
+      "targets": [
+        ["id=addCarMileage", "id"],
+        ["name=mileage", "name"],
+        ["css=#addCarMileage", "css:finder"],
+        ["xpath=//input[@id='addCarMileage']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "7ac1350e-64c5-447b-9f7d-232fdaa5ce71",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(text(),'Add')]",
+      "targets": [
+        ["css=.modal-footer > .btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[3]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "abe297a2-1897-4195-8772-fe1684df527e",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(text(),'Garage')]",
+      "targets": [],
+      "value": "Garage"
+    }, {
+      "id": "42e57cad-e7ad-40cc-a274-2dabf6f929ae",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7f7b67df-7327-4f23-83e2-7725eccb36dc",
+    "name": "4 - Open Instructions",
+    "commands": [{
+      "id": "f24d9f1d-253a-4872-a9d9-7712bd314d39",
+      "comment": "",
+      "command": "open",
+      "target": "https://qauto2.forstudy.space/panel/garage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8cc0b70-c2d3-4601-98a0-340d9758562f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1465x729",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ae0b998-0b64-43da-a0b1-f2eeb697041f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-white:nth-child(3)",
+      "targets": [
+        ["css=.btn-white:nth-child(3)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Instructions')])[3]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/panel/instructions')])[3]", "xpath:href"],
+        ["xpath=//div/div/div/div/nav/a[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e105305-f5a2-4a2c-91d6-2028cf009562",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(text(),'Instructions')]",
+      "targets": [],
+      "value": "Instructions"
+    }, {
+      "id": "cf54bf2b-f710-4710-807e-ca081bdb1fd3",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5b862041-07a6-479e-ba4d-aad00a7ecb09",
+    "name": "3 - Update mileage",
+    "commands": [{
+      "id": "fe6d3e02-700f-480d-8170-f3b4f9f82308",
+      "comment": "",
+      "command": "open",
+      "target": "https://qauto2.forstudy.space/panel/garage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c04acbe2-fad8-4c3e-947d-72586301dfdd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1465x799",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8826ab55-a510-48f1-900f-b936906486e8",
+      "comment": "",
+      "command": "click",
+      "target": "name=miles",
+      "targets": [
+        ["name=miles", "name"],
+        ["css=.car-item:nth-child(1) .update-mileage-form_input", "css:finder"],
+        ["xpath=//input[@name='miles']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "97a4b306-8e9b-44c4-b3a0-f212a3be928a",
+      "comment": "",
+      "command": "type",
+      "target": "name=miles",
+      "targets": [
+        ["name=miles", "name"],
+        ["css=.ng-dirty:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='miles']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "9ff50924-cbf3-4ff1-acb2-326bceb39345",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(text(),'Update')]",
+      "targets": [
+        ["css=.ng-dirty > .update-mileage-form_submit", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Update')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3008c2b1-c528-4c90-b5d7-9a5da0742c51",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(text(),'Garage')]",
+      "targets": [],
+      "value": "Garage"
+    }, {
+      "id": "2b9c84cd-d559-494a-9801-b03d324f6487",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f79cc7fa-35f1-498f-80e2-3f76718618cc",
+    "name": "5 - Log Out",
+    "commands": [{
+      "id": "7a4f1fdc-5601-4679-b84e-b374c17f0a71",
+      "comment": "",
+      "command": "open",
+      "target": "https://qauto2.forstudy.space/panel/garage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9bb5e17-3173-475f-a5b4-ef7448fadd6c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1465x729",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c392959a-8849-4a59-9dfa-d83852342c92",
+      "comment": "",
+      "command": "click",
+      "target": "id=userNavDropdown",
+      "targets": [
+        ["id=userNavDropdown", "id"],
+        ["css=#userNavDropdown", "css:finder"],
+        ["xpath=//button[@id='userNavDropdown']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'My profile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ea7f3b1-38e6-46ba-959e-8e1f3b6acb97",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-item:nth-child(6)",
+      "targets": [
+        ["css=.dropdown-item:nth-child(6)", "css:finder"],
+        ["xpath=//nav/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "48d1b934-f7d9-47b1-9e13-dcfb5641dd57",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//button[contains(text(),'Sign In')]",
+      "targets": [],
+      "value": "Sign In"
+    }, {
+      "id": "15e3d717-8be9-4d93-a861-bd1fe8d00923",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7618198f-3e35-4ac9-bf3c-28cc855976b5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://qauto2.forstudy.space/"],
+  "plugins": []
+}
